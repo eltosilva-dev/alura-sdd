@@ -1,8 +1,15 @@
 node_modules
 bin/
+dist/
+build/
+coverage/
 .eval/
 relatorios/
 *.log
+.env*
 .DS_Store
 .schemathesis/
+.vscode/
+.idea/
+*.tmp
 .claude/settings.local.json
