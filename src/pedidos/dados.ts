@@ -93,18 +93,6 @@ export function criarBase() {
       pedidos.push(pedido);
       return pedido;
     },
-    cancelar: (id: string, motivo?: string) => {
-      const pedido = pedidos.find((p) => p.id === id);
-      if (!pedido || pedido.status === 'cancelado') {
-        return pedido;
-      }
-      pedido.status = 'cancelado';
-      pedido.canceladoEm = new Date().toISOString();
-      if (motivo) {
-        pedido.motivoCancelamento = motivo;
-      }
-      return pedido;
-    },
   };
 }
 
